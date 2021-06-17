@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title th:remove="all">Account activation</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+<body>
+<div style="margin:0;padding:0" dir="ltr" bgcolor="#ffffff">
+	<table border="0" cellspacing="0" cellpadding="0" align="center" id="m_7618598367750937567email_table"
+		   style="border-collapse:collapse">
+		<tbody>
+		<tr>
+			<td id="m_7618598367750937567email_content"
+				style="font-family:Helvetica Neue,Helvetica,Lucida Grande,tahoma,verdana,arial,sans-serif;background:#ffffff">
+				<table border="0" width="100%" cellspacing="0" cellpadding="0" style="border-collapse:collapse">
+					<tbody>
+					<tr>
+						<td height="20" style="line-height:20px" colspan="3">&nbsp;</td>
+					</tr>
+					<tr>
+						<td width="15" style="display:block;width:15px">&nbsp;&nbsp;&nbsp;</td>
+						<td>
+							<table border="0" width="100%" cellspacing="0" cellpadding="0"
+								   style="border-collapse:collapse">
+								<tbody>
+								<tr>
+									<td height="15" style="line-height:15px" colspan="3">&nbsp;</td>
+								</tr>
+								<tr>
+									<td align="left" valign="middle"
+										style="height:32px;line-height:0px"><img
+											src="data:image/png;base64,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"
+											height="32" style="border:0" class="CToWUd"></td>
+								</tr>
+								<tr style="border-bottom:solid 1px #e5e5e5">
+									<td height="15" style="line-height:15px" colspan="3">&nbsp;</td>
+								</tr>
+								</tbody>
+							</table>
+						</td>
+						<td width="15" style="display:block;width:15px">&nbsp;&nbsp;&nbsp;</td>
+					</tr>
+					<tr>
+						<td width="15" style="display:block;width:15px">&nbsp;&nbsp;&nbsp;</td>
+						<td>
+							<table border="0" width="100%" cellspacing="0" cellpadding="0"
+								   style="border-collapse:collapse">
+								<tbody>
+								<tr>
+									<td height="28" style="line-height:28px">&nbsp;</td>
+								</tr>
+								<tr>
+									<td><span class="m_7618598367750937567mb_text"
+											  style="font-family:Helvetica Neue,Helvetica,Lucida Grande,tahoma,verdana,arial,sans-serif;font-size:16px;line-height:21px;color:#141823">
+                                                            <p th:text="'Hi ' + ${user.username} + ','"></p>
+                                                            <p></p>
+                                                            <div>Thank you for registering for the Pixalione Commercial
+                                                                app
+                                                            </div>
+                                                            Visit the following link to activate your account
+                                                            <p></p>
+                                                            <table border="0" width="100%" cellspacing="0"
+																   cellpadding="0" style="border-collapse:collapse">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td height="9" style="line-height:9px"
+																			colspan="3">
+                                                                            &nbsp;</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td><a th:href="${url}"
+																			   style="color:#f4cc1e;text-decoration:none"
+																			   target="_blank">
+                                                                                <table border="0" width="100%"
+																					   cellspacing="0" cellpadding="0"
+																					   style="border-collapse:collapse">
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <td
+																									style="border-collapse:collapse;border-radius:2px;text-align:center;display:block;border:solid 1px #f4cc1e;background:#f4cc1e;padding:7px 16px 11px 16px">
+                                                                                                <a th:href="${url}"
+																								   style="color:#f4cc1e;text-decoration:none;display:block"
+																								   target="_blank">
+                                                                                                    <center>
+                                                                                                        <font size="3">
+                                                                                                            <span
+																													style="font-family:Helvetica Neue,Helvetica,Lucida Grande,tahoma,verdana,arial,sans-serif;white-space:nowrap;font-weight:bold;vertical-align:middle;color:#3c3c3c;font-size:14px;line-height:14px">Confirm
+                                                                                                                your
+                                                                                                                email&nbsp;<span
+																														class="il">address</span></span>
+                                                                                                        </font>
+                                                                                                    </center>
+                                                                                                </a></td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </a></td>
+                                                                        <td width="100%">
+																		</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="32" style="line-height:32px"
+																			colspan="3">&nbsp;</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table><br>
+                                                        </span></td>
+								</tr>
+								<tr>
+									<td height="28" style="line-height:28px">&nbsp;</td>
+								</tr>
+								</tbody>
+							</table>
+						</td>
+						<td width="15" style="display:block;width:15px">&nbsp;&nbsp;&nbsp;</td>
+					</tr>
+					<tr>
+						<td width="15" style="display:block;width:15px">&nbsp;&nbsp;&nbsp;</td>
+						<td>
+							<table border="0" width="100%" cellspacing="0" cellpadding="0" align="left"
+								   style="border-collapse:collapse">
+								<tbody>
+								<tr style="border-top:solid 1px #e5e5e5">
+									<td height="19" style="line-height:19px">&nbsp;</td>
+								</tr>
+								<tr>
+									<td
+											style="font-family:Helvetica Neue,Helvetica,Lucida Grande,tahoma,verdana,arial,sans-serif;font-size:11px;color:#aaaaaa;line-height:16px">
+										This message was sent to <a th:href="'mailto:' + ${user.email}"
+																	th:text="${user.email}"
+																	style="color:#f4cc1e;text-decoration:none"
+																	target="_blank"></a> at your
+										request.</td>
+								</tr>
+								</tbody>
+							</table>
+						</td>
+						<td width="15" style="display:block;width:15px">&nbsp;&nbsp;&nbsp;</td>
+					</tr>
+					<tr>
+						<td height="20" style="line-height:20px" colspan="3">&nbsp;</td>
+					</tr>
+					</tbody>
+				</table>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+</div>
+</body>
